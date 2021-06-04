@@ -8,28 +8,28 @@ The following events are triggered as part of User Event Type in Packet Status S
 
 ### Failure response for User Event Type
 
-Sl No. | Event ID | Event Type | Event Name | Description | Reference ID | Reference ID Type
--------|----------|------------|------------|-------------|--------------|-------------------
-1 | ADM-PKT-405 | User | Authorization request | This event specifies that the specified user name is not authorized | No ID | No ID Type
-2 | ADM-PKT-406 | User | Check RID validation | This event specifies that the specified registration ID is invalid | No ID | No ID Type
-3 | ADM-PKT-407 | User | Check whether center exists or not | This event specifies that the center id extracted from registration id does not exist | No ID | No ID Type
-4 | ADM-PKT-408 | User | Check whether RID exists or not | This event specifies that the registration ID is missing in the input | No ID | No ID Type
+Event ID | Event Type | Event Name | Description | Reference ID Type
+-------- | ---------- | ---------- | ----------- | -----------------
+ADM-PKT-405 | User | Authorization request | This event specifies that the specified user name is not authorized | No ID 
+ADM-PKT-406 | User | Check RID validation | This event specifies that the specified registration ID is invalid | No ID 
+ADM-PKT-407 | User | Check whether center exists or not | This event specifies that the center id extracted from registration id does not exist | No ID 
+ADM-PKT-408 | User | Check whether RID exists or not | This event specifies that the registration ID is missing in the input | No ID 
 
 ## System Events
 The following events are triggered as part of System Event Type in Packet Status Service module of Admin Services
 
 **Request Info for System Event Type**
 
-Sl No. | Event ID | Event Type | Event Name | Description | Reference ID | Reference ID Type
--------|----------|------------|------------|-------------|--------------|-------------------
-1 | ADM-PKT-102 | System | Request for packet status update API | This event calls the API to update the packet status for <Registration id value> | <Registration id value> | RID
-2 | ADM-PKT-103 | System | Check authorization RID with zone | This event triggers the authorization of registration ID with the zone | <Registration id value> | RID
-3 | ADM-PKT-104 | System | Request to get packet status | This event calls the API to get the packet status for Registration ID | <Registration id value> | RID
-4 | ADM-PKT-105 | System | Request to get packet status | This event specifies that the packet with registration id has reached Packet Receiver	| <Registration id value> | RID
-5 | ADM-PKT-106 | System | Request to get packet status | This event specifies that the packet with registration id is uploaded to the landing zone | <Registration id value> | RID
-6 | ADM-PKT-107 | System | Request to get packet status | This event specifies that the packet with registration id is uploaded to the Packet Store | <Registration id value> | RID
-7 | ADM-PKT-108 | System | Request to get packet status | This event specifies that the PDF for registration id is added to queue for printing | <Registration id value> | RID
-8 | ADM-PKT-109 | System | Request to get packet status	| This event specifies that the printing and post completed for the registration ID | <Registration id value> | RID
+Event ID | Event Type | Event Name | Description | Reference ID Type
+-------- | ---------- | ---------- | ----------- | -----------------
+ADM-PKT-102 | System | Request for packet status update API | This event calls the API to update the packet status for <Registration id value> | <Registration id value>
+ADM-PKT-103 | System | Check authorization RID with zone | This event triggers the authorization of registration ID with the zone | <Registration id value>
+ADM-PKT-104 | System | Request to get packet status | This event calls the API to get the packet status for Registration ID | <Registration id value>
+ADM-PKT-105 | System | Request to get packet status | This event specifies that the packet with registration id has reached Packet Receiver	| <Registration id value>
+ADM-PKT-106 | System | Request to get packet status | This event specifies that the packet with registration id is uploaded to the landing zone | <Registration id value>
+ADM-PKT-107 | System | Request to get packet status | This event specifies that the packet with registration id is uploaded to the Packet Store | <Registration id value>
+ADM-PKT-108 | System | Request to get packet status | This event specifies that the PDF for registration id is added to queue for printing | <Registration id value>
+ADM-PKT-109 | System | Request to get packet status	| This event specifies that the printing and post completed for the registration ID | <Registration id value>
 
 **Success response for System Event Type**
 
